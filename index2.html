@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/site.css">
+<meta charset="UTF-8">
+<script src="script2.js"></script>
+<title>Payment Processing</title>
+</head>
+<body style="background-color: #008080;">
+
+<h2 class="payProc1">Enter Payment Information</h2>
+
+<form onSubmit="return validateForm();"> 
+
+  <label class="radiobox"> 
+  <img src="images/AmEx.png" alt="AmEx" height="120" width="140">
+  <img src="images/Discover.png" alt="Discover" height="120" width="140">
+  <img src="images/MasterCard.png" alt="MasterCard" height="120" width="140">
+  <img src="images/Visa.png" alt="Visa" height="120" width="140">
+  <input type="radio" id="creditCard" checked="checked" name="radio" onClick="updateForm(this);" value="CreditCard">
+  <span class="checkmark"></span></label>
+  <label class="radiobox">
+  <img src="images/PayPal.png" alt="PayPal" height="60" width="110">
+  <input type="radio" id="payPal" name="radio" onClick="updateForm(this);" value="PayPal">
+  <span class="checkmark"></span></label>
+  
+  
+  <br>
+  
+  <div id="paymentInformation"></div>
+  
+  <input type="image" src="images/PayNow.png" alt="PayNow" name="pay" value="Pay Now"><br>
+   
+
+</form>
+
+  <p><br></p>
+  <a href="../index.html">ePortfolio Page</a>
+  <p><br></p>
+
+  <script>document.getElementById("creditCard").click()</script>
+</body>
+</html>

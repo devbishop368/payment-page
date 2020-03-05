@@ -1,0 +1,235 @@
+div.main_header {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span.main_header {
+	color: #ffffff;
+	font-size: 250%;
+}
+
+span.body_text {
+	font-size: 150%;
+}
+
+h2.personal1 {
+	color: #5fbef4;
+}
+
+h2.personal2 {
+	color: #c2f0c2;
+}
+
+h2.personal3 {
+	color: #ffd24d;
+}
+
+h2.payProc1 {
+	color: #88dae0;
+}
+
+li.highschool {
+	font-style: italic;
+}
+
+li.college {
+	font-weight: bold;
+}
+
+a {
+	font-size:100%;
+}
+
+a:hover.nav { 
+	
+        font-size: 250%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #cccccc;
+}
+
+tr:nth-child(3) {
+	background-color: #ffffff;
+}
+
+th {
+	background-color: yellow;
+}
+
+ol {
+	list-style-type: decimal;
+	padding-bottom: 0;
+}
+
+ol > li > ol {
+	
+	list-style-type: upper-alpha;
+	margin-left:2em;
+	padding-bottom: 0;
+}
+
+
+/* radiobox label */
+.radiobox {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	padding-left: 35px;
+	margin: 50px;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.radiobox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	position:absolute;
+	top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+	border-radius: 50%;
+        background-color: #eee;
+}
+
+.radiobox:hover input ~ .checkmark {
+	background-color: #dce2ed;
+}
+
+.radiobox input:checked ~ .checkmark {
+	background-color: green;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+
+.radiobox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.radiobox .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+ /* Checkbox label */
+.checkbox {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide default checkbox */
+.checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* custom checkbox */
+.checkmark2 {
+	position: absolute;
+	top: 0;
+  	left: 0;
+  	height: 25px;
+  	width: 25px;
+  	background-color: #eee;
+}
+
+/* grey background color for hover */
+.checkbox:hover input ~ .checkmark2 {
+  	background-color: #ccc;
+}
+
+/* blue background for checkmark */
+.checkbox input:checked ~ .checkmark2 {
+  	background-color: #2196F3;
+  
+}
+
+/* hidden when not checked */
+.checkmark2:after {
+  	content: "";
+  	position: absolute;
+  	display: none;
+}
+
+/* shown when checked */
+.checkbox input:checked ~ .checkmark2:after {
+  	display: block;
+}
+
+/* checkmark style */
+.checkbox .checkmark2:after {
+  	left: 9px;
+  	top: 5px;
+  	width: 5px;
+  	height: 10px;
+  	border: solid white;
+  	border-width: 0 3px 3px 0;
+  	-webkit-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	transform: rotate(45deg);
+} 
+
+/* Checkbox Column */
+.column {
+  	float: left;
+  	width: 50%;
+	margin: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.row {
+  	display: flex;
+}
+
+.column {
+  	flex: 50%;
+}
+
+p {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
